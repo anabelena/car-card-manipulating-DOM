@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card DOM JS</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="card">
+
+      <div class="card_image">
+        <img src="./assets/mercedez_gray.jpg" alt="" />
+      </div>
+
+      <div class="card_description">
+        <h2>Mercedez Benz C300 2023</h2>
+        <p>Kilometraje: 250 000km</p>
+        <p>Combustible: 25mpg</p>
+        <p>Seguridad: ⭐ ⭐ ⭐ ⭐ ⭐</p>
+        <div class="card_info">
+          <div>
+            <h3>Escoge un color:</h3>
+            <div class="card_color">
+              <span class="red" onclick=""></span>
+              <span class="gray"></span>
+              <span class="black" id="black"></span>
+            </div>
+          </div>
+          <div class="card_price">$134,450,00</div>
+        </div>
+      </div>
+
+      <div class="card_buttons">
+        <button id="button" class="card_button">Add to cart!</button>
+        <button id="feedback" class="card_button card_button--feedback">
+          Excellent choice! 😎
+        </button>
+      </div>
+    </section>
+  </body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="./document.js"></script>
+</html>
+

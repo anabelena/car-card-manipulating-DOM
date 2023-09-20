@@ -1,0 +1,96 @@
+
+body{
+    height: 100vh;
+    /* display flex para centrar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: gray;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    width: 400px;
+    height: 660px;
+    box-shadow: 10px 10px 25px #3c3c3c;
+    /*margin: 0 auto; */
+}
+
+.card_image img {
+    max-width: 100%;
+}
+
+.card_description{
+    background-color: #62c256;
+    color: #fff;
+    padding: 16px;
+}
+
+.card_color{
+    display:flex;
+    gap:8px;
+    margin-bottom: 16px;
+}
+
+.card_color span{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.red{
+ background-color: red;
+}
+
+.gray{
+    background-color: gray;
+}
+
+.black{
+    background-color: black;
+}
+
+.card_price{
+    font-size: 2rem;
+}
+
+.card_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_buttons{
+    display: flex;
+    justify-content: space-between;
+    background-color: #62c256;
+    padding: 16px;
+}
+
+.card_button{
+    cursor: pointer;
+    border: none;
+    background-color: #000;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.card_button--feedback{
+    background-color: yellow;
+    color: #333;
+    display: none;
+}
+
+.tag{
+    font-size: 0.9rem;
+    background-color: black;
+    border-radius: 5px;
+    width: 4rem;
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    text-transform: uppercase;
+}
